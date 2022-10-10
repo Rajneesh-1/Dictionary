@@ -8,7 +8,7 @@ from googletrans import Translator
 
 
 root=tk.Tk()
-root.title('Dictionary')
+root.title('My Dictionary')
 root.geometry('600x300')
 root['bg']='white'
 frame=Frame(root,width=200,height=300,borderwidth=1,relief=RIDGE)
@@ -54,10 +54,10 @@ search.place(x=380,y=80)
 quit=Button(root,text='Quit',font=('verdana',10,'bold'),cursor='hand2',relief=RIDGE,command=quit)
 quit.place(x=450,y=80)
 
-meaning=Label(root,text='Meaning',bg='white',font=('verdana',10,'bold'))
+meaning=Label(root,text='Meaning',bg='white',font=('verdana',12,'bold'))
 meaning.place(x=230,y=120)
 
-output=Text(root,height=8,width=40,borderwidth=2,relief=RIDGE)
+output=Text(root,height=8,width=40,borderwidth=3,relief=RIDGE)
 output.place(x=230,y=160)
 
 root.mainloop()
